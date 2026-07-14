@@ -11,18 +11,19 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 
 ## 📂 Project Structure
 
-| Symbol | File/Folder              | Description |
-|--------|---------------------------|-------------|
-| 📂     | `src/`                   | Source code for preprocessing and training |
-| 📄     | `src/preprocess.py`      | Data cleaning, SMOTE oversampling, exploratory plots |
-| 📄     | `src/train_test_model.py`| Model training, evaluation, metrics logging, trend plots |
-| 📂     | `results/`               | Saved models (.pkl) and scaler |
-| 📂     | `plots/`                 | ROC curves, PR curves, confusion matrices, feature importance, distributions |
-| 📄     | `creditcard.csv`         | Kaggle dataset (Credit Card Fraud Detection) |
-| 📄     | `requirements.txt`       | Python dependencies |
-| 📄     | `results.csv`            | Model comparison results |
-| 📄     | `LICENSE`                | MIT License |
-| 📄     | `README.md`              | Project documentation |
+📂 Credit_Card_Fraud_Detection/
+│
+├── 📂 src/
+│   ├── 📄 preprocess.py          # Data cleaning, SMOTE oversampling, exploratory plots
+│   ├── 📄 train_test_model.py    # Model training, evaluation, metrics logging, trend plots
+│
+├── 📂 results/                   # Saved models (.pkl) and scaler
+├── 📂 plots/                     # ROC curves, PR curves, confusion matrices, feature importance, distributions
+├── 📄 creditcard.csv             # Dataset (Kaggle Credit Card Fraud Detection)
+├── 📄 requirements.txt           # Python dependencies
+├── 📄 results.csv                # Model comparison results
+├── 📄 LICENSE                    # MIT License
+└── 📄 README.md                  # Project documentation
 
 
 ## ⚙️ Features
