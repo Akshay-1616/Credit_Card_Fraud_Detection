@@ -11,49 +11,51 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 
 ## 📂 Project Structure
 
-Credit_Card_Fraud_Detection/
+📂 Credit_Card_Fraud_Detection/
 │
-├── src/
-│   ├── preprocess.py          # Data cleaning, SMOTE oversampling, exploratory plots
-│   ├── train_test_model.py    # Model training, evaluation, metrics logging, trend plots
+├── 📂 src/
+│   ├── 📄 preprocess.py          # Data cleaning, SMOTE oversampling, exploratory plots
+│   ├── 📄 train_test_model.py    # Model training, evaluation, metrics logging, trend plots
 │
-├── results/                   # Saved models (.pkl) and scaler
-├── plots/                     # ROC curves, PR curves, confusion matrices, feature importance, distributions
-├── creditcard.csv             # Dataset (Kaggle Credit Card Fraud Detection)
-├── requirements.txt           # Python dependencies
-└── README.md                  # Project documentation
+├── 📂 results/                   # Saved models (.pkl) and scaler
+├── 📂 plots/                     # ROC curves, PR curves, confusion matrices, feature importance, distributions
+├── 📄 creditcard.csv             # Dataset (Kaggle Credit Card Fraud Detection)
+├── 📄 requirements.txt           # Python dependencies
+├── 📄 results.csv                # Model comparison results
+├── 📄 LICENSE                    # MIT License
+└── 📄 README.md                  # Project documentation
 
 Code
 
 ---
 
 ## ⚙️ Features
+
 ### 🔹 Preprocessing
-- Drop NaN values in target column (`Class`)
-- Convert `Class` to integer
-- Scale features with `StandardScaler`
-- Handle imbalance with **SMOTE**
-- Save cleaned dataset (`cleaned_resampled.csv`)
-- Generate exploratory plots:
-  - Class distribution (bar + pie)
-  - Transaction amount distribution (histogram + boxplot)
-  - Fraud vs Non‑Fraud transaction time distribution
-  - Correlation heatmap
+- 🧹 Drop NaN values in target column (`Class`)
+- 🔢 Convert `Class` to integer
+- 📏 Scale features with `StandardScaler`
+- ⚖️ Handle imbalance with **SMOTE**
+- 💾 Save cleaned dataset (`cleaned_resampled.csv`)
+- 📊 Generate exploratory plots:
+  - 📉 Class distribution (bar + pie)
+  - 💵 Transaction amount distribution (histogram + boxplot)
+  - ⏰ Fraud vs Non‑Fraud transaction time distribution
+  - 🔥 Correlation heatmap
 
-### 🔹 Models
-- **Logistic Regression**
-- **Random Forest** (with feature importance)
-- **XGBoost** (with `scale_pos_weight`)
-- **RandomizedSearchCV** with StratifiedKFold for hyperparameter tuning
+### 🤖 Models
+- 📈 **Logistic Regression**
+- 🌲 **Random Forest** (with feature importance)
+- 🚀 **XGBoost** (with `scale_pos_weight`)
+- 🎯 **RandomizedSearchCV** with StratifiedKFold for hyperparameter tuning
 
-### 🔹 Evaluation
-- Metrics: Accuracy, Precision, Recall, F1, AUC
-- ROC curves and Precision‑Recall curves
-- Confusion matrices (heatmaps)
-- Feature importance plots
-- Trend plots over time (Accuracy, F1, Precision, Recall, AUC)
+### 📊 Evaluation
+- 📏 Metrics: Accuracy, Precision, Recall, F1, AUC
+- 🌀 ROC curves and Precision‑Recall curves
+- 🟦 Confusion matrices (heatmaps)
+- 🌟 Feature importance plots
+- 📈 Trend plots over time (Accuracy, F1, Precision, Recall, AUC)
 
----
 
 ## 🚀 How to Run
 1. Clone the repository:
@@ -128,14 +130,17 @@ new_data_scaled = scaler.transform(new_data)
 # Predict fraud probability
 prob = model.predict_proba(new_data_scaled)[:,1]
 print("Fraud probability:", prob[0])
-📈 Future Improvements
-Add deep learning models (e.g., LSTMs, Autoencoders)
 
-Deploy as a REST API or web app
 
-Integrate real‑time fraud detection pipeline
+## 🔮 Future Improvements
 
-Experiment with anomaly detection methods
+- 🤖 Add deep learning models (e.g., LSTMs, Autoencoders)
+- 🌐 Deploy as a REST API or web app
+- ⚡ Integrate real‑time fraud detection pipeline
+- 🔍 Experiment with anomaly detection methods
+- 📈 Expand evaluation with additional metrics and visualizations
+- ☁️ Explore cloud deployment for scalability
+
 
 👨‍💻 Author
 Developed by Akshay Kumar (github.com in Bing)  
