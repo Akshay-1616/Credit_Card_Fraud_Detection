@@ -1,0 +1,15 @@
+# Ignore virtual environment
+venv/
+
+# Ignore results and plots
+results/*.pkl
+plots/*.png
+plots/*.jpg
+
+# Ignore dataset (too large for GitHub)
+creditcard.csv
+cleaned_resampled.csv
+
+# Ignore Python cache
+__pycache__/
+*.pyc
