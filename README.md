@@ -72,15 +72,34 @@ Train and evaluate models:
 
 bash
 python src/train_test_model.py
-📊 Sample Outputs
-ROC Curve (Logistic Regression)
-[Looks like the result wasn't safe to show. Let's switch things up and try something else!]
+## 📊 Sample Outputs
 
-Confusion Matrix (Random Forest)
-[Looks like the result wasn't safe to show. Let's switch things up and try something else!]
+This section highlights key visualizations generated during preprocessing and model evaluation.
 
-Feature Importance (XGBoost)
-[Looks like the result wasn't safe to show. Let's switch things up and try something else!]
+### Preprocessing & Data Exploration
+- **Class Distribution**  
+  Shows the imbalance between fraud and non‑fraud transactions.
+- **Transaction Amount Distribution**  
+  Histogram and boxplot reveal spending patterns and anomalies.
+- **Correlation Heatmap**  
+  Displays relationships among anonymized features.
+
+### Model Evaluation
+- **ROC Curve (Logistic Regression)**  
+  Illustrates the trade‑off between true positive rate and false positive rate.
+  ![ROC Curve - Logistic Regression](plots/Logistic_Regresion_ROC_Curve.png)
+
+- **Confusion Matrix (Random Forest)**  
+  Highlights correct vs incorrect classifications.
+  ![Confusion Matrix - Random Forest](plots/RF_ConfusionMatrix_heatmap.png)
+
+- **Feature Importance (XGBoost)**  
+  Shows which features contribute most to fraud detection.
+  ![Feature Importance - XGBoost](plots/feature_importance_XG.png)
+
+### Trends & Comparisons
+- Accuracy, Precision, Recall, F1, and AUC trends over time help compare model stability.
+
 
 📦 Dataset
 The dataset used is the Kaggle Credit Card Fraud Detection dataset (kaggle.com in Bing).
