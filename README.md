@@ -118,7 +118,7 @@ Credit_Card_Fraud_Detection/
 - [Transaction Time Density](plots/Transaction_Time_Density.png)
 
 📦 Dataset
-The dataset used is the Kaggle Credit Card Fraud Detection dataset (kaggle.com in Bing).
+The dataset used is the Kaggle Credit Card Fraud Detection dataset (kaggle.com in Bing)(https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 It contains anonymized features (V1–V28), Time, Amount, and Class (fraud or not fraud).
 
 🛠 Requirements
@@ -152,7 +152,7 @@ print("Fraud probability:", prob[0])
     -Experiment with anomaly detection methods
 
 👨‍💻 Author
-Developed by [Akshay kumar]  
+Developed by [Akshay kumar]  (https://github.com/Akshay-1616)
 Feel free to fork, contribute, or open issues to improve the project.
 
 
