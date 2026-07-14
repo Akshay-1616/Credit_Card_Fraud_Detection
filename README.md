@@ -13,16 +13,16 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 
 | Symbol | File/Folder              | Description |
 |--------|---------------------------|-------------|
-| 📂     | `src/`                   | Source code for preprocessing and training |
-| 📄     | `src/preprocess.py`      | Data cleaning, SMOTE oversampling, exploratory plots |
-| 📄     | `src/train_test_model.py`| Model training, evaluation, metrics logging, trend plots |
-| 📂     | `results/`               | Saved models (.pkl) and scaler |
-| 📂     | `plots/`                 | ROC curves, PR curves, confusion matrices, feature importance, distributions |
-| 📄     | `creditcard.csv`         | Kaggle dataset (Credit Card Fraud Detection) |
-| 📄     | `requirements.txt`       | Python dependencies |
-| 📄     | `results.csv`            | Model comparison results |
-| 📄     | `LICENSE`                | MIT License |
-| 📄     | `README.md`              | Project documentation |
+| 📂     | [src/](src)              | Source code for preprocessing and training |
+| 📄     | [src/preprocess.py](src/preprocess.py)      | Data cleaning, SMOTE oversampling, exploratory plots |
+| 📄     | [src/train_test_model.py](src/train_test_model.py) | Model training, evaluation, metrics logging, trend plots |
+| 📂     | [results/](results)      | Saved models (.pkl) and scaler |
+| 📂     | [plots/](plots)          | ROC curves, PR curves, confusion matrices, feature importance, distributions |
+| 📄     | [creditcard.csv](creditcard.csv) | Kaggle dataset (Credit Card Fraud Detection) |
+| 📄     | [requirements.txt](requirements.txt) | Python dependencies |
+| 📄     | [results.csv](results.csv) | Model comparison results |
+| 📄     | [LICENSE](LICENSE)       | MIT License |
+| 📄     | [README.md](README.md)   | Project documentation |
 
 
 
