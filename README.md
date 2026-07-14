@@ -117,6 +117,18 @@ Credit_Card_Fraud_Detection/
 - [Fraud vs Non‑Fraud by Hour](plots/Fraud_vs_NonFraud_ByHour.png)
 - [Transaction Time Density](plots/Transaction_Time_Density.png)
 
+## 📊 Sample Outputs
+
+### ROC Curve (Logistic Regression)
+![ROC Curve - Logistic Regression](plots/Logistic_Regresion_ROC_Curve.png)
+
+### Confusion Matrix (Random Forest)
+![Confusion Matrix - Random Forest](plots/RF_ConfusionMatrix_heatmap.png)
+
+### Feature Importance (XGBoost)
+![Feature Importance - XGBoost](plots/feature_importance_XG.png)
+
+
 📦 Dataset
 The dataset used is the Kaggle Credit Card Fraud Detection dataset (kaggle.com in Bing)(https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 It contains anonymized features (V1–V28), Time, Amount, and Class (fraud or not fraud).
