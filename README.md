@@ -13,9 +13,11 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 
 | Symbol | File/Folder              | Description |
 |--------|---------------------------|-------------|
-| 📂     | [src/](src)              | Source code for preprocessing and training |
+| 📂     | [src/](src)              | Source code for preprocessing, training, and API |
 | 📄     | [src/preprocess.py](src/preprocess.py)      | Data cleaning, SMOTE oversampling, exploratory plots |
 | 📄     | [src/train_test_model.py](src/train_test_model.py) | Model training, evaluation, metrics logging, trend plots |
+| 📄     | [src/app.py](src/app.py) | **FastAPI application** exposing `/predict` and `/health` endpoints |
+| 📄     | [src/test_api_accuracy.py](src/test_api_accuracy.py) | Script to validate API predictions against dataset |
 | 📂     | [results/](results)      | Saved models (.pkl) and scaler |
 | 📂     | [plots/](plots)          | ROC curves, PR curves, confusion matrices, feature importance, distributions |
 | 📄     | [creditcard.csv](creditcard.csv) | Kaggle dataset (Credit Card Fraud Detection) |
@@ -23,6 +25,7 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 | 📄     | [results.csv](results.csv) | Model comparison results |
 | 📄     | [LICENSE](LICENSE)       | MIT License |
 | 📄     | [README.md](README.md)   | Project documentation |
+
 
 
 
