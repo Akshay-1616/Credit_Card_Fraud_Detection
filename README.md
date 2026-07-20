@@ -1,5 +1,8 @@
 # 🛡️ Credit Card Fraud Detection
 
+## CI/CD Status
+[![Build, Push & Deploy](https://github.com/Akshay-1616/Credit_Card_Fraud_Detection/actions/workflows/docker-build.yml/badge.svg)](https://github.com/Akshay-1616/Credit_Card_Fraud_Detection/actions/workflows/docker-build.yml)
+
 ![Python](https://img.shields.io/badge/python-3.10-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
