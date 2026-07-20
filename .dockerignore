@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Large datasets and notebooks
+*.csv
+*.ipynb
+
+# Git and version control
+.git
+.gitignore
+
+# OS-specific files
+.DS_Store
+Thumbs.db
