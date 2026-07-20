@@ -20,10 +20,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t akhiakshay/credit_card_fraud_api:latest .
+        run: docker build -t akhiakshay/credit_card_fraud_detection:latest -f Credit_Card_Fraud_Detection/Dockerfile .
 
       - name: Push Docker image
-        run: docker push akhiakshay/credit_card_fraud_api:latest
+        run: docker push akhiakshay/credit_card_fraud_detection:latest
 
       - name: Trigger Render Deploy
         run: |

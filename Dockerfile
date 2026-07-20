@@ -7,7 +7,7 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src/ ./src
-COPY results/ ./results
+# COPY results/ ./results
 
 EXPOSE 8000
 
