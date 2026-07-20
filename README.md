@@ -23,8 +23,13 @@ It demonstrates end‑to‑end workflow: preprocessing, oversampling, training, 
 | 📄     | [creditcard.csv](creditcard.csv) | Kaggle dataset (Credit Card Fraud Detection) |
 | 📄     | [requirements.txt](requirements.txt) | Python dependencies |
 | 📄     | [results.csv](results.csv) | Model comparison results |
+| 📄     | [Dockerfile](Dockerfile) | Docker build instructions for containerization |
+| 📄     | [.dockerignore](.dockerignore) | Excluded files from Docker build context |
+| 📂     | [.github/workflows/](.github/workflows) | GitHub Actions workflows for CI/CD |
+| 📄     | [.github/workflows/docker-build.yml](.github/workflows/docker-build.yml) | CI/CD pipeline: build, push to Docker Hub, trigger Render deploy |
 | 📄     | [LICENSE](LICENSE)       | MIT License |
 | 📄     | [README.md](README.md)   | Project documentation |
+
 
 
 
@@ -231,6 +236,49 @@ Accuracy: 0.97
 The dataset (creditcard.csv) should be placed in the project root folder.
 
 Large files (like datasets) are excluded from GitHub via .gitignore. Download the dataset from Kaggle (kaggle.com in Bing).
+
+🐳 Docker & ☁️ Render Deployment
+🔹 Docker Setup
+Added Dockerfile to containerize the FastAPI application.
+
+Added .dockerignore to exclude unnecessary files from the image build.
+
+Updated requirements.txt for deployment dependencies.
+
+Build and run locally:
+
+bash
+docker build -t credit_card_fraud_api .
+docker run -p 8000:8000 credit_card_fraud_api
+API will be available at: http://127.0.0.1:8000/docs
+
+🔹 CI/CD Pipeline
+Configured GitHub Actions workflow (.github/workflows/docker-build.yml)
+
+Workflow steps:
+
+Build Docker image.
+
+Push image to Docker Hub (akhiakshay/credit_card_fraud_api:latest).
+
+Trigger Render redeploy automatically using API integration.
+
+Secrets used in GitHub Actions:
+
+DOCKER_USERNAME
+
+DOCKER_PASSWORD
+
+RENDER_API_KEY
+
+RENDER_SERVICE_ID
+
+🔹 Render Deployment
+Service hosted on Render Cloud.
+
+Auto‑redeploys on every push to main.
+
+Accessible via your Render service URL.
 
 
 👨‍💻 Author
